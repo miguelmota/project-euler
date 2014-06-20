@@ -8,11 +8,11 @@
 */
 
 (function() {
-    function iterator(limit, func) {
+    function iterator(limit, fun) {
         var acc = 0;
 
         for (var i = 0; i < limit; i++) {
-            acc += func(i);
+            acc += fun(i);
         }
 
         return acc;
